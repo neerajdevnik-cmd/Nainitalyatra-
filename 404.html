@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | Nainital Yatra</title>
+<meta name="robots" content="noindex, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --pine: #1B4332;
+  --pine-mid: #2D6A4F;
+  --pine-dark: #0F2A1D;
+  --amber: #D97706;
+  --amber-light: #F59E0B;
+  --amber-dark: #B45309;
+  --gold: #FCD34D;
+  --whatsapp: #25D366;
+  --whatsapp-dark: #1DA851;
+  --bg: #FAF9F6;
+  --surface: #F3F5F2;
+  --card: #FFFFFF;
+  --text: #1F2937;
+  --muted: #525B66;
+  --border: #E5E7EB;
+  --radius: 18px;
+  --shadow-sm: 0 2px 10px rgba(15, 42, 29, 0.06);
+  --shadow-md: 0 10px 30px rgba(15, 42, 29, 0.10);
+  --shadow-lg: 0 20px 45px rgba(15, 42, 29, 0.16);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', 'Plus Jakarta Sans', Georgia, serif;
+  line-height: 1.2;
+  color: var(--pine-dark);
+  font-weight: 700;
+}
+h1 { font-size: clamp(2rem, 5.2vw, 3.6rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.65rem, 3.8vw, 2.5rem); letter-spacing: -0.015em; }
+h3 { font-size: 1.2rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; }
+p { color: var(--muted); }
+.container { width: min(1160px, 92%); margin: 0 auto; }
+section { padding: 72px 0; }
+.section-head { text-align: center; max-width: 700px; margin: 0 auto 42px; }
+.section-head p { margin-top: 12px; font-size: 1.04rem; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .78rem; font-weight: 800; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--amber-dark);
+  background: #FEF3C7; padding: 5px 12px; border-radius: 999px; margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 50px; padding: 12px 24px; border-radius: 999px; border: 2px solid transparent;
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: .98rem; font-weight: 700;
+  text-decoration: none; cursor: pointer;
+  transition: transform .18s ease, background .2s ease, box-shadow .2s ease, border-color .2s ease;
+  text-align: center;
+}
+.btn:active { transform: scale(.97); }
+.btn-amber {
+  background: linear-gradient(135deg, var(--amber-light) 0%, var(--amber) 100%);
+  color: #fff; box-shadow: 0 8px 20px rgba(217,119,6,.32);
+}
+.btn-amber:hover { background: var(--amber-dark); transform: translateY(-1px); }
+.btn-whatsapp {
+  background: var(--whatsapp); color: #fff;
+  box-shadow: 0 6px 16px rgba(37,211,102,.28);
+}
+.btn-whatsapp:hover { background: var(--whatsapp-dark); transform: translateY(-1px); }
+.btn-pine { background: var(--pine); color: #fff; }
+.btn-pine:hover { background: var(--pine-dark); transform: translateY(-1px); }
+.btn-outline { background: #fff; color: var(--pine); border-color: var(--pine); }
+.btn-outline:hover { background: var(--pine); color: #fff; }
+.btn-block { width: 100%; }
+
+/* NAVBAR */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.94); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 70px; }
+.brand { text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.brand-mark {
+  width: 38px; height: 38px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--pine) 0%, var(--pine-mid) 100%);
+  color: var(--gold); display: grid; place-items: center; font-weight: 800; font-size: 1.05rem;
+  box-shadow: 0 4px 10px rgba(27,67,50,.22); flex-shrink: 0;
+}
+.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+.brand-text strong { font-size: 1.15rem; color: var(--pine-dark); font-weight: 800; }
+.brand-text span { font-size: .72rem; color: var(--muted); font-weight: 600; }
+.nav-links { display: flex; gap: 24px; list-style: none; }
+.nav-links a { text-decoration: none; font-weight: 600; font-size: .92rem; color: var(--text); transition: color .15s; }
+.nav-links a:hover { color: var(--amber-dark); }
+.nav-cta { min-height: 44px; padding: 10px 18px; font-size: .9rem; }
+@media (max-width: 920px) { .nav-links { display: none; } }
+@media (max-width: 480px) { .nav-cta { padding: 9px 14px; font-size: .84rem; } .brand-text span { display: none; } }
+
+/* FLOATING WHATSAPP */
+.float-wa {
+  position: fixed; right: 18px; bottom: 18px; z-index: 200;
+  width: 60px; height: 60px; border-radius: 50%;
+  background: var(--whatsapp); display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 24px rgba(37,211,102,.45); text-decoration: none;
+}
+.float-wa svg { width: 32px; height: 32px; fill: #fff; }
+.float-wa::after {
+  content: ""; position: absolute; inset: -5px; border-radius: 50%;
+  border: 2px solid var(--whatsapp); opacity: .6; animation: pulse 2.2s infinite;
+}
+@keyframes pulse { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.38); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .float-wa::after { animation: none; } html { scroll-behavior: auto; } }
+
+/* FOOTER */
+footer { background: var(--pine-dark); color: #CFE3D8; padding: 56px 0 96px; font-size: .94rem; }
+.foot-grid { display: grid; gap: 32px; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .foot-grid { grid-template-columns: 1.3fr 1fr 1fr 1fr; } }
+footer h4 { font-family: 'Plus Jakarta Sans', sans-serif; color: #fff; font-size: .98rem; font-weight: 800; margin-bottom: 12px; }
+footer p, footer li { color: #CFE3D8; }
+footer ul { list-style: none; display: grid; gap: 8px; }
+footer a { color: var(--gold); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.foot-bottom {
+  margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12);
+  font-size: .82rem; color: #9FBFAE; text-align: center;
+}
+@media (max-width: 480px) { section { padding: 52px 0; } }
+
+.nf { min-height: 75vh; display: grid; place-items: center; text-align: center; padding: 60px 20px; }
+.nf-box { max-width: 520px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 28px; box-shadow: var(--shadow-md); }
+.nf-box p { margin: 14px 0 26px; }
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="/" class="brand" aria-label="Nainital Yatra home">
+      <span class="brand-mark" aria-hidden="true">NY</span>
+      <span class="brand-text">
+        <strong>Nainital Yatra</strong>
+        <span>Your Local Guardian in Kumaon</span>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="/#taxi-rates">Taxi Rates</a></li>
+        <li><a href="/#places">Places &amp; Cafes</a></li>
+        <li><a href="/kathgodam-to-nainital-taxi.html">Kathgodam Taxi</a></li>
+        <li><a href="/kainchi-dham-taxi.html">Kainchi Dham</a></li>
+        <li><a href="/#plan">Plan Trip</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/917017443619?text=Hi%20Nainital%20Yatra%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="btn btn-whatsapp nav-cta">WhatsApp Us</a>
+  </div>
+</header>
+
+<main class="nf">
+  <div class="nf-box">
+    <span class="eyebrow">404 • Wrong Turn</span>
+    <h1>Ye rasta aage band hai!</h1>
+    <p>No worries — head back to our homepage to check fixed taxi fares, or message our local team directly on WhatsApp.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="/" class="btn btn-pine">Back to Home</a>
+      <a href="https://wa.me/917017443619?text=Hi%20Nainital%20Yatra%2C%20I%20need%20help%20with%20my%20trip." target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Local Team</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Nainital Yatra</h4>
+        <p>Your Local Guardian in Kumaon. Honest taxis, verified local hill drivers, and handpicked stays — based on the Ranikhet–Almora Highway, Uttarakhand.</p>
+      </div>
+      <div>
+        <h4>Popular Routes</h4>
+        <ul>
+          <li><a href="/kathgodam-to-nainital-taxi.html">Kathgodam to Nainital Taxi</a></li>
+          <li><a href="/kainchi-dham-taxi.html">Kainchi Dham Darshan Taxi</a></li>
+          <li><a href="/kumaon-circuit-tour.html">Full Kumaon Circuit Tour</a></li>
+          <li><a href="/#taxi-rates">Live Taxi Fare Estimator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Hubs</h4>
+        <p>Nainital • Kainchi Dham • Bhimtal • Ranikhet • Almora • Dunagiri • Kausani • Jageshwar Dham</p>
+      </div>
+      <div>
+        <h4>24/7 Local Desk</h4>
+        <ul>
+          <li>WhatsApp / Call: <a href="https://wa.me/917017443619" target="_blank" rel="noopener">+91 70174 43619</a></li>
+          <li>Email: <a href="mailto:hello@nainitalyatra.in">hello@nainitalyatra.in</a></li>
+          <li>Base: Ranikhet–Almora Highway, Bamsyun, Almora, UK 263645</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© <span id="year">2026</span> Nainital Yatra — nainitalyatra.in • Transparent Kumaon Travel &amp; Verified Hill Taxis</div>
+  </div>
+</footer>
+
+</body>
+</html>
