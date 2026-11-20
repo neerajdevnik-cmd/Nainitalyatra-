@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Nainital Yatra | Local Guardian Taxi, Trips & Stays in Kumaon</title>
+<meta name="description" content="Honest, fixed-rate taxis, verified local hill drivers and hidden Kumaon stays across Nainital, Kainchi Dham, Ranikhet & Almora. 24/7 on-road support.">
+<meta property="og:title" content="Nainital Yatra | Your Local Guardian in Kumaon">
+<meta property="og:description" content="Zero middleman commissions. Fixed taxi fares. 24/7 on-ground help in Kumaon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nainitalyatra.in">
+<link rel="canonical" href="https://nainitalyatra.in">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --pine: #1B4332;
+  --pine-dark: #14321F;
+  --amber: #D97706;
+  --amber-dark: #B45F04;
+  --whatsapp: #25D366;
+  --whatsapp-dark: #1EBE5A;
+  --bg: #FAF9F6;
+  --card: #FFFFFF;
+  --text: #1F2937;
+  --muted: #5B6470;
+  --border: #E7E5E0;
+  --radius: 16px;
+  --shadow: 0 4px 18px rgba(27, 67, 50, 0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3, h4 { line-height: 1.25; color: var(--pine-dark); font-weight: 800; }
+h1 { font-size: clamp(1.9rem, 5.5vw, 3.4rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); letter-spacing: -0.01em; }
+h3 { font-size: 1.15rem; }
+p { color: var(--muted); }
+.container { width: min(1140px, 92%); margin: 0 auto; }
+section { padding: 64px 0; }
+.section-head { text-align: center; max-width: 680px; margin: 0 auto 36px; }
+.section-head p { margin-top: 10px; font-size: 1.02rem; }
+.eyebrow {
+  display: inline-block; font-size: .8rem; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--amber-dark); margin-bottom: 8px;
+}
+
+/* Buttons: minimum 48px for thumb-friendly tapping */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 48px; padding: 12px 22px; border-radius: 999px; border: 2px solid transparent;
+  font-family: inherit; font-size: 1rem; font-weight: 700; text-decoration: none;
+  cursor: pointer; transition: transform .15s ease, background .2s ease, box-shadow .2s ease;
+  text-align: center;
+}
+.btn:active { transform: scale(.98); }
+.btn-amber { background: var(--amber); color: #fff; box-shadow: 0 6px 16px rgba(217,119,6,.3); }
+.btn-amber:hover { background: var(--amber-dark); }
+.btn-whatsapp { background: var(--whatsapp); color: #fff; }
+.btn-whatsapp:hover { background: var(--whatsapp-dark); }
+.btn-outline { background: #fff; color: var(--pine); border-color: var(--pine); }
+.btn-outline:hover { background: var(--pine); color: #fff; }
+.btn-block { width: 100%; }
+.btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+/* NAVBAR */
+.navbar {
+  position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96);
+  backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+.brand { text-decoration: none; display: flex; flex-direction: column; line-height: 1.15; }
+.brand strong { font-size: 1.2rem; color: var(--pine); font-weight: 800; }
+.brand span { font-size: .72rem; color: var(--muted); font-weight: 500; }
+.nav-links { display: flex; gap: 22px; list-style: none; }
+.nav-links a { text-decoration: none; font-weight: 600; font-size: .92rem; color: var(--text); }
+.nav-links a:hover { color: var(--amber-dark); }
+.nav-cta { min-height: 44px; padding: 10px 18px; font-size: .92rem; }
+@media (max-width: 900px) { .nav-links { display: none; } }
+@media (max-width: 480px) { .nav-cta { padding: 10px 14px; font-size: .85rem; } .brand span { display: none; } }
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(180deg, rgba(20,50,31,.78) 0%, rgba(20,50,31,.92) 100%),
+    radial-gradient(circle at 80% 20%, #2D6A4F 0%, transparent 55%),
+    var(--pine);
+  color: #fff; padding: 72px 0 56px; text-align: center;
+}
+.hero h1 { color: #fff; max-width: 860px; margin: 0 auto; }
+.hero .sub { color: #E6F0EA; font-size: clamp(1rem, 2.2vw, 1.15rem); max-width: 720px; margin: 18px auto 30px; }
+.hero-buttons { display: flex; flex-direction: column; gap: 12px; max-width: 460px; margin: 0 auto; }
+@media (min-width: 640px) { .hero-buttons { flex-direction: row; max-width: none; justify-content: center; } .hero-buttons .btn { min-width: 240px; } }
+.hero .btn-outline { background: transparent; color: #fff; border-color: #fff; }
+.hero .btn-outline:hover { background: #fff; color: var(--pine); }
+.trust-strip {
+  display: grid; grid-template-columns: 1fr; gap: 10px; margin: 40px auto 0; max-width: 860px;
+}
+@media (min-width: 720px) { .trust-strip { grid-template-columns: repeat(3, 1fr); } }
+.trust-badge {
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22);
+  border-radius: 12px; padding: 14px 16px; font-weight: 700; font-size: .95rem; color: #fff;
+}
+.trust-badge::before { content: "✔  "; color: #FCD34D; }
+
+/* TAXI ESTIMATOR */
+.estimator { background: var(--card); }
+.estimator-grid { display: grid; gap: 24px; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .estimator-grid { grid-template-columns: 1.1fr 1fr; align-items: start; } }
+.panel {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; box-shadow: var(--shadow);
+}
+.panel h3 { margin-bottom: 14px; }
+.label { display: block; font-weight: 700; font-size: .9rem; margin: 18px 0 8px; color: var(--pine-dark); }
+.label:first-of-type { margin-top: 0; }
+.route-list, .car-list { display: grid; gap: 10px; }
+.route-option, .car-option {
+  display: flex; align-items: center; gap: 12px; padding: 14px 16px; min-height: 56px;
+  border: 2px solid var(--border); border-radius: 12px; cursor: pointer; background: #fff;
+  transition: border-color .2s, background .2s; user-select: none;
+}
+.route-option input, .car-option input { position: absolute; opacity: 0; pointer-events: none; }
+.route-option:hover, .car-option:hover { border-color: var(--pine); }
+.route-option.selected, .car-option.selected { border-color: var(--amber); background: #FFF8EB; }
+.route-option .r-title { font-weight: 700; font-size: .98rem; color: var(--text); }
+.route-option .r-sub { font-size: .82rem; color: var(--muted); }
+.car-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 480px) { .car-grid { grid-template-columns: repeat(3, 1fr); } }
+.car-option { flex-direction: column; text-align: center; justify-content: center; }
+.car-option .c-name { font-weight: 700; font-size: .95rem; }
+.car-option .c-eg { font-size: .78rem; color: var(--muted); }
+.fare-box {
+  background: linear-gradient(135deg, var(--pine) 0%, #2D6A4F 100%);
+  color: #fff; border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow);
+}
+.fare-box h3 { color: #fff; }
+.fare-box .muted { color: #CFE3D8; font-size: .9rem; }
+.fare-amount { font-size: clamp(1.8rem, 5vw, 2.3rem); font-weight: 800; margin: 10px 0 4px; color: #FCD34D; }
+.fare-box ul { list-style: none; margin: 16px 0 22px; display: grid; gap: 8px; }
+.fare-box li { font-size: .95rem; color: #F0F7F3; padding-left: 26px; position: relative; }
+.fare-box li::before { content: "✔"; position: absolute; left: 0; color: #FCD34D; font-weight: 700; }
+.fare-note { font-size: .8rem; color: #CFE3D8; margin-top: 14px; }
+
+/* PLACES */
+.tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 30px; }
+.tab-btn {
+  min-height: 46px; padding: 10px 18px; border-radius: 999px; border: 2px solid var(--border);
+  background: #fff; font-family: inherit; font-weight: 700; font-size: .92rem; color: var(--text); cursor: pointer;
+}
+.tab-btn.active { background: var(--pine); border-color: var(--pine); color: #fff; }
+.places-grid { display: grid; gap: 22px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .places-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .places-grid { grid-template-columns: repeat(3, 1fr); } }
+.place-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow);
+}
+.place-top { padding: 22px 22px 0; }
+.place-tag {
+  display: inline-block; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
+  background: #ECF5EF; color: var(--pine); padding: 4px 10px; border-radius: 999px; margin-bottom: 10px;
+}
+.place-card h3 { margin-bottom: 8px; }
+.place-card p.desc { font-size: .93rem; }
+.place-meta { padding: 16px 22px; display: grid; gap: 8px; font-size: .88rem; border-top: 1px dashed var(--border); margin-top: 16px; }
+.place-meta div { display: flex; justify-content: space-between; gap: 10px; }
+.place-meta b { color: var(--pine-dark); font-weight: 700; }
+.place-meta span { color: var(--muted); text-align: right; }
+.place-actions { padding: 0 22px 22px; margin-top: auto; }
+.place-actions .btn { width: 100%; font-size: .95rem; }
+.hidden { display: none !important; }
+
+/* COMPARISON */
+.compare-wrap { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; box-shadow: var(--shadow); }
+table.compare { width: 100%; border-collapse: collapse; min-width: 560px; }
+table.compare th, table.compare td { padding: 16px 18px; text-align: left; border-bottom: 1px solid var(--border); font-size: .95rem; vertical-align: top; }
+table.compare thead th { background: #F4F7F4; color: var(--pine-dark); font-weight: 800; }
+table.compare thead th.us { background: var(--pine); color: #fff; }
+table.compare td.us { background: #F3FAF6; color: var(--pine-dark); font-weight: 600; }
+table.compare td.them { color: #8A3B2D; }
+table.compare tr:last-child td { border-bottom: none; }
+.x { color: #B42318; font-weight: 700; margin-right: 6px; }
+.ok { color: #047857; font-weight: 700; margin-right: 6px; }
+
+/* PLANNER */
+.planner { background: var(--pine-dark); color: #fff; }
+.planner h2 { color: #fff; }
+.planner .section-head p { color: #CFE3D8; }
+.planner .eyebrow { color: #FCD34D; }
+.form-card {
+  max-width: 680px; margin: 0 auto; background: #fff; border-radius: var(--radius);
+  padding: 28px; box-shadow: 0 10px 40px rgba(0,0,0,.2);
+}
+.form-grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 600px) { .form-grid { grid-template-columns: 1fr 1fr; } }
+.form-grid .full { grid-column: 1 / -1; }
+.field label { display: block; font-weight: 700; font-size: .88rem; color: var(--pine-dark); margin-bottom: 6px; }
+.field input, .field select, .field textarea {
+  width: 100%; min-height: 48px; padding: 12px 14px; border: 2px solid var(--border); border-radius: 10px;
+  font-family: inherit; font-size: 1rem; color: var(--text); background: #fff;
+}
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--amber); }
+.chip-group { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip {
+  min-height: 44px; padding: 10px 14px; border: 2px solid var(--border); border-radius: 999px;
+  background: #fff; font-family: inherit; font-size: .9rem; font-weight: 600; color: var(--text); cursor: pointer;
+}
+.chip.active { background: #FFF8EB; border-color: var(--amber); color: var(--amber-dark); }
+.form-card .btn { margin-top: 22px; }
+.form-note { font-size: .82rem; color: var(--muted); text-align: center; margin-top: 12px; }
+
+/* GUARDIAN / WHY US */
+.promise-grid { display: grid; gap: 18px; grid-template-columns: 1fr; margin-bottom: 40px; }
+@media (min-width: 760px) { .promise-grid { grid-template-columns: repeat(3, 1fr); } }
+.promise-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+.promise-icon { font-size: 1.8rem; margin-bottom: 10px; }
+.promise-card p { font-size: .95rem; margin-top: 6px; }
+
+/* FLOATING WA */
+.float-wa {
+  position: fixed; right: 18px; bottom: 18px; z-index: 200; width: 60px; height: 60px; border-radius: 50%;
+  background: var(--whatsapp); display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 22px rgba(37,211,102,.45); text-decoration: none;
+}
+.float-wa svg { width: 32px; height: 32px; fill: #fff; }
+.float-wa::after {
+  content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--whatsapp);
+  opacity: .6; animation: pulse 2.2s infinite;
+}
+@keyframes pulse { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.35); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .float-wa::after { animation: none; } html { scroll-behavior: auto; } }
+
+/* FOOTER */
+footer { background: #0F2A1D; color: #CFE3D8; padding: 52px 0 110px; font-size: .95rem; }
+.foot-grid { display: grid; gap: 28px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .foot-grid { grid-template-columns: 1.2fr 1fr 1fr; } }
+footer h4 { color: #fff; font-size: 1rem; margin-bottom: 10px; }
+footer p, footer li { color: #CFE3D8; }
+footer ul { list-style: none; display: grid; gap: 6px; }
+footer a { color: #FCD34D; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.foot-bottom { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); font-size: .82rem; color: #9FBFAE; text-align: center; }
+
+@media (max-width: 480px) { section { padding: 48px 0; } .hero { padding: 52px 0 44px; } }
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#top" class="brand" aria-label="Nainital Yatra home">
+      <strong>Nainital Yatra</strong>
+      <span>Your Local Guardian in Kumaon</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#taxi-rates">Taxi Rates</a></li>
+        <li><a href="#places">Places &amp; Cafes</a></li>
+        <li><a href="#guardian">Local Guardian</a></li>
+        <li><a href="#plan">Plan Trip</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/917017443619?text=Hi%20Nainital%20Yatra%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="btn btn-whatsapp nav-cta">WhatsApp Us</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container">
+    <h1>Don't Just Visit Nainital. Have a Local Guardian With You.</h1>
+    <p class="sub">Zero middleman commissions. Verified hill drivers, honest fixed taxi fares, hidden Kumaon stays, and 24/7 on-road support across Nainital, Kainchi Dham, Ranikhet &amp; Almora.</p>
+    <div class="hero-buttons">
+      <a href="#taxi-rates" class="btn btn-amber">Book Verified Taxi (Fixed Rates)</a>
+      <a href="#plan" class="btn btn-outline">Get Free Custom Trip Plan</a>
+    </div>
+    <div class="trust-strip">
+      <div class="trust-badge">100% Transparent Rates</div>
+      <div class="trust-badge">Verified Local Hill Drivers</div>
+      <div class="trust-badge">24/7 On-Ground Emergency Help</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TAXI ESTIMATOR ================= -->
+<section id="taxi-rates" class="estimator">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Transparent Pricing</span>
+      <h2>Taxi Fare Estimator</h2>
+      <p>Pick your route and car to see an honest fare estimate, then lock it in on WhatsApp.</p>
+    </div>
+
+    <div class="estimator-grid">
+      <div class="panel">
+        <h3>1. Choose your route</h3>
+        <div class="route-list" id="routeList" role="radiogroup" aria-label="Route"></div>
+
+        <h3 style="margin-top:26px;">2. Choose your car</h3>
+        <div class="car-grid" id="carList" role="radiogroup" aria-label="Car type" style="margin-top:14px;"></div>
+      </div>
+
+      <div class="fare-box">
+        <h3 id="fareRouteName">Nainital Local Sightseeing</h3>
+        <p class="muted" id="fareCarName">Hatchback / Alto</p>
+        <div class="fare-amount" id="fareAmount">₹2,200 – ₹2,600</div>
+        <p class="muted">Estimated fare for the full day, fixed on WhatsApp.</p>
+        <ul id="fareIncludes"></ul>
+        <button class="btn btn-amber btn-block" id="lockFareBtn" type="button">Lock This Fare on WhatsApp</button>
+        <p class="fare-note">Final fare is confirmed on WhatsApp before your trip. Tolls, parking and special stops are discussed upfront, never added later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLACES ================= -->
+<section id="places" style="background:#F4F7F4;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Curated for You</span>
+      <h2>Places, Cafes &amp; Stays</h2>
+      <p>Honest rate expectations and the best time to visit, handpicked by our local team.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Filter places">
+      <button class="tab-btn active" data-filter="all" type="button">All</button>
+      <button class="tab-btn" data-filter="spiritual" type="button">Spiritual &amp; Temples</button>
+      <button class="tab-btn" data-filter="gems" type="button">Hidden Gems</button>
+      <button class="tab-btn" data-filter="cafes" type="button">Cafes &amp; Food</button>
+      <button class="tab-btn" data-filter="stays" type="button">Verified Stays</button>
+    </div>
+
+    <div class="places-grid" id="placesGrid"></div>
+  </div>
+</section>
+
+<!-- ================= GUARDIAN COMPARISON ================= -->
+<section id="guardian">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why Trust Us?</span>
+      <h2>The Local Guardian Promise</h2>
+      <p>See how we compare with random online agents and unknown taxi drivers on the hill roads.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th scope="col">What matters</th>
+            <th scope="col">Random Online Agents</th>
+            <th scope="col" class="us">Nainital Yatra Local Guardian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Hidden charges</b></td>
+            <td class="them"><span class="x">✕</span>Extra tolls, parking and "night charges" added at the end</td>
+            <td class="us"><span class="ok">✔</span>Fixed fare confirmed on WhatsApp upfront</td>
+          </tr>
+          <tr>
+            <td><b>Driver reliability on steep roads</b></td>
+            <td class="them"><span class="x">✕</span>Unknown drivers, unfamiliar with hill routes</td>
+            <td class="us"><span class="ok">✔</span>Verified local hill drivers with years of mountain experience</td>
+          </tr>
+          <tr>
+            <td><b>Last-minute itinerary changes</b></td>
+            <td class="them"><span class="x">✕</span>Extra charges or refusal to change plans</td>
+            <td class="us"><span class="ok">✔</span>Flexible plans, adjusted directly with your local team</td>
+          </tr>
+          <tr>
+            <td><b>Emergency roadside help</b></td>
+            <td class="them"><span class="x">✕</span>No one to call once you have paid</td>
+            <td class="us"><span class="ok">✔</span>24/7 real human backup on the Ranikhet–Almora highway</td>
+          </tr>
+          <tr>
+            <td><b>Hotel &amp; cafe photos</b></td>
+            <td class="them"><span class="x">✕</span>Often edited or outdated photos</td>
+            <td class="us"><span class="ok">✔</span>Stays and cafes personally visited by our team</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="promise-grid" style="margin-top:40px;">
+      <div class="promise-card">
+        <div class="promise-icon">🤝</div>
+        <h3>No Middleman Commissions</h3>
+        <p>We work directly with local drivers and stays, so your money goes to the people who serve you.</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-icon">⛽</div>
+        <h3>Backed by Local Fuel Network</h3>
+        <p>Our drivers' daily operations are supported by our own local fuel-station network, keeping fares stable.</p>
+      </div>
+      <div class="promise-card">
+        <div class="promise-icon">📞</div>
+        <h3>A Real Person, Any Hour</h3>
+        <p>Car trouble, a changed plan or a question at night? Call or WhatsApp a real human from our team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRIP PLANNER ================= -->
+<section id="plan" class="planner">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Takes 30 Seconds</span>
+      <h2>Get Your Free Custom Trip Plan</h2>
+      <p>Tell us a little about your trip. We'll reply on WhatsApp with a plan built for you.</p>
+    </div>
+
+    <form class="form-card" id="plannerForm" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="pName">Your Name *</label>
+          <input id="pName" type="text" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="pDate">Arrival Date *</label>
+          <input id="pDate" type="date" required>
+        </div>
+        <div class="field">
+          <label for="pDays">Number of Days *</label>
+          <select id="pDays" required>
+            <option value="">Select days</option>
+            <option>1 day</option>
+            <option>2 days</option>
+            <option>3 days</option>
+            <option>4 days</option>
+            <option>5 days</option>
+            <option>6 to 7 days</option>
+            <option>More than 7 days</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="pGroup">Group Type *</label>
+          <select id="pGroup" required>
+            <option value="">Select group</option>
+            <option>Family</option>
+            <option>Couple</option>
+            <option>Solo</option>
+            <option>Friends</option>
+            <option>Pilgrims</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Interests (select all that apply)</label>
+          <div class="chip-group" id="interestChips">
+            <button type="button" class="chip" data-value="Temples">Temples</button>
+            <button type="button" class="chip" data-value="Offbeat Hills">Offbeat Hills</button>
+            <button type="button" class="chip" data-value="Cafes">Cafes</button>
+            <button type="button" class="chip" data-value="Self-Drive Support">Self-Drive Support</button>
+          </div>
+        </div>
+        <div class="field full">
+          <label for="pNotes">Anything else? (optional)</label>
+          <textarea id="pNotes" rows="2" placeholder="e.g. Elderly parents, need a wheelchair-friendly stay"></textarea>
+        </div>
+      </div>
+      <button class="btn btn-amber btn-block" type="submit">Send Plan Request on WhatsApp</button>
+      <p class="form-note">Free. No payment needed. A local team member replies on WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a href="https://wa.me/917017443619?text=Hi%20Nainital%20Yatra%2C%20I%20need%20help%20planning%20my%20trip." class="float-wa" target="_blank" rel="noopener" aria-label="Chat with Nainital Yatra on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.099-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+</a>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Nainital Yatra</h4>
+        <p>Your Local Guardian in Kumaon. Honest taxis, verified drivers and hidden stays, built on the Ranikhet–Almora highway.</p>
+      </div>
+      <div>
+        <h4>Base &amp; Operations</h4>
+        <p>Ranikhet–Almora Highway, Uttarakhand</p>
+        <h4 style="margin-top:16px;">Service Hubs</h4>
+        <p>Nainital • Kainchi Dham • Bhimtal • Ranikhet • Almora • Dunagiri • Kausani</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>WhatsApp / Phone: <a href="https://wa.me/917017443619" target="_blank" rel="noopener">+91 70174 43619</a></li>
+          <li>Email: <a href="mailto:hello@nainitalyatra.in">hello@nainitalyatra.in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">© <span id="year"></span> Nainital Yatra. nainitalyatra.in</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var WA_NUMBER = "917017443619";
+
+  function waLink(message) {
+    return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(message);
+  }
+
+  /* ---------- Taxi estimator data ---------- */
+  var routes = [
+    {
+      id: "kathgodam",
+      title: "Kathgodam to Nainital",
+      sub: "One-way transfer, approx. 35 km",
+      includes: ["Fuel and tolls as per route", "Driver allowance", "Hill driving expert"],
+      fares: { hatch: [1500, 1800], sedan: [1800, 2200], suv: [2600, 3200] }
+    },
+    {
+      id: "sightseeing",
+      title: "Nainital Local Sightseeing",
+      sub: "Full day, local points covered",
+      includes: ["Fuel for local sightseeing", "Driver allowance", "Hill driving expert", "Up to 80 km"],
+      fares: { hatch: [2200, 2600], sedan: [2600, 3000], suv: [3200, 3800] }
+    },
+    {
+      id: "kainchi",
+      title: "Nainital – Kainchi Dham – Almora",
+      sub: "Pilgrimage circuit, one day",
+      includes: ["Fuel for full route", "Driver allowance", "Hill driving expert", "Temple halt included"],
+      fares: { hatch: [3000, 3500], sedan: [3500, 4200], suv: [4500, 5200] }
+    },
+    {
+      id: "circuit",
+      title: "Full Kumaon Circuit",
+      sub: "Nainital – Ranikhet – Kausani – Jageshwar",
+      includes: ["Fuel for full circuit", "Driver allowance", "Hill driving expert", "Night halt support", "Multi-day route planning"],
+      fares: { hatch: [9000, 11000], sedan: [11000, 13000], suv: [14000, 16500] }
+    }
+  ];
+
+  var cars = [
+    { id: "hatch", name: "Hatchback", eg: "Alto / WagonR" },
+    { id: "sedan", name: "Sedan", eg: "Dzire / Aura" },
+    { id: "suv", name: "SUV", eg: "Innova / Ertiga" }
+  ];
+
+  var state = { route: routes[1], car: cars[0] };
+
+  function formatINR(n) {
+    return "₹" + n.toLocaleString("en-IN");
+  }
+
+  function renderRoutes() {
+    var wrap = document.getElementById("routeList");
+    wrap.innerHTML = "";
+    routes.forEach(function (r) {
+      var el = document.createElement("label");
+      el.className = "route-option" + (state.route.id === r.id ? " selected" : "");
+      el.setAttribute("role", "radio");
+      el.setAttribute("aria-checked", state.route.id === r.id ? "true" : "false");
+      el.innerHTML = '<div><div class="r-title"></div><div class="r-sub"></div></div>';
+      el.querySelector(".r-title").textContent = r.title;
+      el.querySelector(".r-sub").textContent = r.sub;
+      el.addEventListener("click", function () { state.route = r; update(); });
+      wrap.appendChild(el);
+    });
+  }
+
+  function renderCars() {
+    var wrap = document.getElementById("carList");
+    wrap.innerHTML = "";
+    cars.forEach(function (c) {
+      var el = document.createElement("label");
+      el.className = "car-option" + (state.car.id === c.id ? " selected" : "");
+      el.setAttribute("role", "radio");
+      el.setAttribute("aria-checked", state.car.id === c.id ? "true" : "false");
+      el.innerHTML = '<span class="c-name"></span><span class="c-eg"></span>';
+      el.querySelector(".c-name").textContent = c.name;
+      el.querySelector(".c-eg").textContent = c.eg;
+      el.addEventListener("click", function () { state.car = c; update(); });
+      wrap.appendChild(el);
+    });
+  }
+
+  function update() {
+    renderRoutes();
+    renderCars();
+    var range = state.route.fares[state.car.id];
+    document.getElementById("fareRouteName").textContent = state.route.title;
+    document.getElementById("fareCarName").textContent = state.car.name + " (" + state.car.eg + ")";
+    document.getElementById("fareAmount").textContent = formatINR(range[0]) + " – " + formatINR(range[1]);
+    var ul = document.getElementById("fareIncludes");
+    ul.innerHTML = "";
+    state.route.includes.forEach(function (item) {
+      var li = document.createElement("li");
+      li.textContent = item;
+      ul.appendChild(li);
+    });
+  }
+
+  document.getElementById("lockFareBtn").addEventListener("click", function () {
+    var range = state.route.fares[state.car.id];
+    var msg = "Hi Nainital Yatra, I want to lock this taxi fare.\n" +
+      "Route: " + state.route.title + "\n" +
+      "Car: " + state.car.name + " (" + state.car.eg + ")\n" +
+      "Estimated fare: " + formatINR(range[0]) + " – " + formatINR(range[1]) + "\n" +
+      "Please confirm the final fixed fare and availability.";
+    window.open(waLink(msg), "_blank", "noopener");
+  });
+
+  /* ---------- Places data ---------- */
+  var places = [
+    {
+      cat: "spiritual", tag: "Spiritual & Temples", name: "Kainchi Dham",
+      desc: "Neem Karoli Baba's ashram, a peaceful temple set among deodar trees, popular with pilgrims and visitors seeking calm.",
+      best: "Early morning or March to June", budget: "Free darshan; taxi ₹1,500–₹3,000 round trip",
+      msg: "Kainchi Dham"
+    },
+    {
+      cat: "spiritual", tag: "Spiritual & Temples", name: "Jageshwar Dham",
+      desc: "An ancient cluster of stone temples in deodar forest, one of the most significant shrine complexes in Kumaon.",
+      best: "Shravan month or October to March", budget: "Free darshan; full day taxi from ₹3,500",
+      msg: "Jageshwar Dham"
+    },
+    {
+      cat: "spiritual", tag: "Spiritual & Temples", name: "Dunagiri Temple",
+      desc: "A quieter hilltop shrine dedicated to Goddess Dunagiri, with views of the Himalayan range on clear days.",
+      best: "Winter months for clear snow views", budget: "Free darshan; combine with a Almora taxi from ₹3,000",
+      msg: "Dunagiri Temple"
+    },
+    {
+      cat: "gems", tag: "Hidden Gems", name: "Nainital Lake & Tiffin Top",
+      desc: "Boating on the emerald lake in the morning, then a short drive to Tiffin Top for a sunrise over the peaks.",
+      best: "October to June, sunrise for Tiffin Top", budget: "Boating ₹300–₹600 per person",
+      msg: "Nainital Lake & Tiffin Top"
+    },
+    {
+      cat: "gems", tag: "Hidden Gems", name: "Kausani",
+      desc: "Known as the Switzerland of Kumaon, with uninterrupted views of the Trishul and Nanda Devi peaks at sunrise.",
+      best: "March to June and September to November", budget: "Stay ₹1,500–₹4,000 per night",
+      msg: "Kausani"
+    },
+    {
+      cat: "cafes", tag: "Cafes & Food", name: "Handpicked Local Cafes",
+      desc: "Cozy hill cafes serving Kumaoni thali, fresh bakes and mountain tea, all personally visited by our team.",
+      best: "Lunch and evening, any season", budget: "₹150–₹600 per person",
+      msg: "Local Cafes"
+    },
+    {
+      cat: "stays", tag: "Verified Stays", name: "Handpicked Homestays",
+      desc: "Family-run homestays in Ranikhet, Almora and Kainchi with clean rooms, home-cooked food and honest photos.",
+      best: "Book ahead for weekends and May to June", budget: "₹1,200–₹4,500 per night",
+      msg: "Homestays"
+    }
+  ];
+
+  function renderPlaces(filter) {
+    var grid = document.getElementById("placesGrid");
+    grid.innerHTML = "";
+    places.filter(function (p) { return filter === "all" || p.cat === filter; })
+      .forEach(function (p) {
+        var card = document.createElement("article");
+        card.className = "place-card";
+        card.innerHTML =
+          '<div class="place-top">' +
+            '<span class="place-tag"></span>' +
+            '<h3></h3>' +
+            '<p class="desc"></p>' +
+          '</div>' +
+          '<div class="place-meta">' +
+            '<div><b>Best time</b><span class="best"></span></div>' +
+            '<div><b>Budget</b><span class="budget"></span></div>' +
+          '</div>' +
+          '<div class="place-actions">' +
+            '<a class="btn btn-outline ask" target="_blank" rel="noopener">Ask Local Host</a>' +
+          '</div>';
+        card.querySelector(".place-tag").textContent = p.tag;
+        card.querySelector("h3").textContent = p.name;
+        card.querySelector(".desc").textContent = p.desc;
+        card.querySelector(".best").textContent = p.best;
+        card.querySelector(".budget").textContent = p.budget;
+        card.querySelector(".ask").href = waLink("Hi Nainital Yatra, I want to know more about " + p.msg + " for my trip.");
+        grid.appendChild(card);
+      });
+  }
+
+  document.querySelectorAll(".tab-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      document.querySelectorAll(".tab-btn").forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+      renderPlaces(btn.getAttribute("data-filter"));
+    });
+  });
+
+  /* ---------- Trip planner ---------- */
+  document.querySelectorAll("#interestChips .chip").forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      chip.classList.toggle("active");
+      chip.setAttribute("aria-pressed", chip.classList.contains("active") ? "true" : "false");
+    });
+  });
+
+  document.getElementById("plannerForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = document.getElementById("pName").value.trim();
+    var date = document.getElementById("pDate").value;
+    var days = document.getElementById("pDays").value;
+    var group = document.getElementById("pGroup").value;
+    var notes = document.getElementById("pNotes").value.trim();
+    var interests = [];
+    document.querySelectorAll("#interestChips .chip.active").forEach(function (c) {
+      interests.push(c.getAttribute("data-value"));
+    });
+
+    if (!name || !date || !days || !group) {
+      alert("Please fill in your name, arrival date, number of days and group type.");
+      return;
+    }
+
+    var msg = "Hi Nainital Yatra, please send me a free custom trip plan.\n" +
+      "Name: " + name + "\n" +
+      "Arrival date: " + date + "\n" +
+      "Duration: " + days + "\n" +
+      "Group: " + group + "\n" +
+      "Interests: " + (interests.length ? interests.join(", ") : "Not specified") + "\n" +
+      (notes ? "Notes: " + notes + "\n" : "") +
+      "Thank you!";
+    window.open(waLink(msg), "_blank", "noopener");
+  });
+
+  /* ---------- Init ---------- */
+  document.getElementById("year").textContent = new Date().getFullYear();
+  update();
+  renderPlaces("all");
+})();
+</script>
+</body>
+</html>
