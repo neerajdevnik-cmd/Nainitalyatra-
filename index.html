@@ -746,7 +746,7 @@
       color: #fff;
     }
 
-    .lb-info h4 { font-size: 1.1rem; margin-bottom: 8px; }
+    .lb-info .lb-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
 
     .lb-actions {
       display: flex;
@@ -777,9 +777,10 @@
       text-align: center;
     }
 
-    .footer h3 {
+    .footer h2 {
       color: #fff;
       font-size: 1.4rem;
+      font-weight: 800;
       margin-bottom: 8px;
     }
 
@@ -979,7 +980,7 @@
     <button class="lb-close" onclick="closeLightbox(event)" aria-label="Close photo">&times;</button>
     <img id="lbImg" src="" alt="Uttarakhand Location Photo" />
     <div class="lb-info">
-      <h4 id="lbTitle"></h4>
+      <p id="lbTitle" class="lb-title"></p>
       <div class="lb-actions">
         <a id="lbGuideBtn" href="#" class="btn-explore">📍 Explore Cafes &amp; Resorts Here</a>
         <a id="lbCabBtn" href="#" target="_blank" rel="noopener" class="btn-cab-sm">🚖 Book Cab Here</a>
@@ -989,7 +990,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <h3>Nainital Yatra — Taxi &amp; Tours (www.Nainitalyatra.in)</h3>
+    <h2>Nainital Yatra — Taxi &amp; Tours (www.Nainitalyatra.in)</h2>
     <p>Your trusted local travel partner for Nainital, Kainchi Dham, Bhimtal, Mukteshwar, Ranikhet, Almora, Kausani, Munsiyari, Jim Corbett &amp; Char Dham Yatra.</p>
     <div class="footer-grid-links" id="footerAllLinks"></div>
     <p style="margin-bottom: 14px;">
